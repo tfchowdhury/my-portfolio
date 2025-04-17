@@ -11,52 +11,70 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f9f9f9; /* Light background */
+  background-color: #000000; /* Neon black background */
+  color: white; /* White font color */
+  text-align: center;
 }
 
 /* Style for the main heading */
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-  text-align: center;
+  font-size: 3rem; /* Larger font size */
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: white; /* White font color */
+  text-shadow: none; /* Remove glow effect */
 }
 
-/* Style for the hyperlink boxes */
+/* Style for the paragraph */
+p {
+  font-size: 1.25rem; /* Slightly larger font size */
+  line-height: 1.8;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  color: white; /* White font color */
+  text-shadow: none; /* Remove glow effect */
+}
+
+/* Style for the hyperlink buttons */
 a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  background-color: #007bff; /* Default blue color */
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 8px;
-  font-size: 1rem;
+  background-color: transparent; /* Transparent button background */
+  padding: 12px 24px;
+  margin: 10px;
+  border: 2px solid; /* Add border for glow effect */
+  border-radius: 12px;
+  font-size: 1.2rem;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 0 10px transparent; /* Initial no glow */
 }
 
-a:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Add different colors for each box */
+/* Multicolored border glow for each button */
 a:nth-child(1) {
-  background-color: #ff6f61; /* Red */
+  border-color: #ff6f61; /* Red */
+  box-shadow: 0 0 10px #ff6f61;
 }
-
 a:nth-child(2) {
-  background-color: #6bcf63; /* Green */
+  border-color: #6bcf63; /* Green */
+  box-shadow: 0 0 10px #6bcf63;
 }
-
 a:nth-child(3) {
-  background-color: #f7c948; /* Yellow */
+  border-color: #f7c948; /* Yellow */
+  box-shadow: 0 0 10px #f7c948;
 }
-
 a:nth-child(4) {
-  background-color: #4a90e2; /* Blue */
+  border-color: #4a90e2; /* Blue */
+  box-shadow: 0 0 10px #4a90e2;
+}
+a:nth-child(5) {
+  border-color: #9b59b6; /* Purple */
+  box-shadow: 0 0 10px #9b59b6;
 }
 
-a:nth-child(5) {
-  background-color: #9b59b6; /* Purple */
+/* Hover effect for buttons */
+a:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 0 20px currentColor; /* Stronger glow on hover */
 }

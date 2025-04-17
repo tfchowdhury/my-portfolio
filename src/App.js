@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './components/Home'; // Import the new Home component
 import About from './components/About';
 import Education from './components/Education';
 import Skills from './components/Skills';
@@ -17,7 +18,8 @@ function App() {
       <div className="p-6 space-y-8">
         <Navbar />
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Home />} /> {/* Use Home component for the root route */}
+          <Route path="/about" element={<About />} />
           <Route path="/education" element={<Education />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/work" element={<WorkExperience />} />
