@@ -6,9 +6,8 @@ import Skills from './components/Skills';
 import WorkExperience from './components/Experience/WorkExperience';
 import SoftwareDevelopment from './components/Experience/SoftwareDevelopment';
 import DataAnalytics from './components/Experience/DataAnalytics';
-import AIML from './components/Experience/AIML';
 import ProjectManagement from './components/Experience/ProjectManagement';
-import StrategyBusiness from './components/Experience/StrategyBusiness';
+import BusinessAssociate from './components/Experience/BusinessAssociate';
 import Volunteer from './components/Volunteer';
 import Contact from './components/Contact';
 
@@ -24,9 +23,8 @@ function App() {
           <Route path="/work" element={<WorkExperience />} />
           <Route path="/work/software-development" element={<SoftwareDevelopment />} />
           <Route path="/work/data-analytics" element={<DataAnalytics />} />
-          <Route path="/work/ai-ml" element={<AIML />} />
           <Route path="/work/project-management" element={<ProjectManagement />} />
-          <Route path="/work/strategy-business" element={<StrategyBusiness />} />
+          <Route path="/work/business-associate" element={<BusinessAssociate />} />
           <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
